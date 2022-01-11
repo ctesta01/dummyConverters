@@ -80,7 +80,7 @@ browseVignettes("dummyConverters")
 ![vignette screenshot](img/demonstrations.png)
 
 The vignette shows a similar example but using the `magrittr` package's `%<>%`
-assignment pipe throughout, and similarly one could use these functions with
+assignment pipe throughout, and one could just as easily use these functions with
 the `%>%` or `|>` pipes respectively from dplyr and newly introduced in the R
 4.1.0 version.
 
