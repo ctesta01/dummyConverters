@@ -2,7 +2,7 @@
 % Please edit documentation in R/dummy_variables.R
 \name{categorical_to_dummies}
 \alias{categorical_to_dummies}
-\title{Converting Categorical Variables to Dummy Variables and Vice-Versa}
+\title{Convert Categorical Variables to Dummy Variables}
 \usage{
 categorical_to_dummies(df, variable, drop_categorical = TRUE)
 }
@@ -20,16 +20,10 @@ a modified data.frame with new columns that are dummy indicators for
 each level of the variable specified
 }
 \description{
-This document introduces a pair of functions which should be intuitive to
-tidyverse users and standardizes the process for converting categorical
-columns of data back and forth from a set of dummy variables (columns of
-TRUE/FALSE indicators for each of the categorical levels).
-Convert Categorical Variables to Dummy Variables
-}
-\details{
 This function returns a dataframe modified to contain dummy variables
 (TRUE/FALSE indicator columns) for each level of the variable specified.
-
+}
+\details{
 The new column names are automatically constructed to be {variable}_{level}
 where variable is given as a function argument and level is specified as
 each unique level of the variable given.

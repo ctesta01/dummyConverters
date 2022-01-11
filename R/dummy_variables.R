@@ -1,10 +1,10 @@
 
-#' Converting Categorical Variables to Dummy Variables and Vice-Versa
-#'
-#' This document introduces a pair of functions which should be intuitive to
-#' tidyverse users and standardizes the process for converting categorical
-#' columns of data back and forth from a set of dummy variables (columns of
-#' TRUE/FALSE indicators for each of the categorical levels).
+# Converting Categorical Variables to Dummy Variables and Vice-Versa
+#
+# This document introduces a pair of functions which should be intuitive to
+# tidyverse users and standardizes the process for converting categorical
+# columns of data back and forth from a set of dummy variables (columns of
+# TRUE/FALSE indicators for each of the categorical levels).
 
 
 #' Convert Categorical Variables to Dummy Variables 
