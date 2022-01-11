@@ -41,7 +41,7 @@ mtcars <- dummies_to_categorical(mtcars, cyl)
 mtcars <- select(mtcars, mpg, cyl, everything())
 
 # pay attention that the version converted back will be a character vector
-mtcars$cyl %<>% as.numeric()
+mtcars$cyl <- as.numeric(mtcars$cyl)
 head(mtcars)
 ```
 
