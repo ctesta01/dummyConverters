@@ -55,6 +55,8 @@ head(mtcars)
 
 ### Read the examples 
 
+You can access the package vignettes if you run the following command.
+
 ```r
 browseVignettes("dummyConverters")
 ```
