@@ -22,13 +22,12 @@ library(magrittr)
 # Demonstration with mtcars
 
 ```{r demonstration with mtcars}
-
 # if we copy mtcars into a new object
 df <- mtcars 
 head(df)
 
 # we can convert the cyl variable to dummy variables
-df %<>% categories_to_dummies(cyl)
+df %<>% categorical_to_dummies(cyl)
 head(df)
 
 # and we can convert it back 
@@ -57,7 +56,7 @@ df <- penguins
 head(df)
 
 # convert to dummy variables
-df %<>% categories_to_dummies(species)
+df %<>% categorical_to_dummies(species)
 head(df)
 
 # convert back to a categorical variable

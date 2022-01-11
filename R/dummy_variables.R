@@ -29,7 +29,7 @@
 #' @seealso dummies_to_categorical
 #' @export
 #' 
-categories_to_dummies <- function(df, variable, drop_categorical = TRUE) {
+categorical_to_dummies <- function(df, variable, drop_categorical = TRUE) {
 
   # capture the tidy evaluation style variable name
   variable_orig <- rlang::enquo(variable)
