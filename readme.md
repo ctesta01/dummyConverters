@@ -3,7 +3,7 @@
 `dummyConverters` is a simple package with two functions,
 `categorical_to_dummies` and `dummies_to_categorical`, which serve to help R
 users to convert categorical data frame variables into dummy variables and
-vice-versa. Dummy variables are columns of data which are made true/false
+vice-versa. Dummy variables are columns of data which are true/false
 indicators for a particular level of a categorical variable.
 
 ### Installing 
