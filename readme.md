@@ -14,6 +14,7 @@ devtools::install_github("ctesta01/dummyConverters", build_vignettes = TRUE)
 ## Simple Usage
 
 ```r
+library(dummyConverters)
 mtcars <- categorical_to_dummies(mtcars, cyl)
 
 head(mtcars)

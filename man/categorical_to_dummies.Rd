@@ -9,14 +9,15 @@ categorical_to_dummies(df, variable, drop_categorical = TRUE)
 \arguments{
 \item{df}{the data.frame to modify}
 
+\item{variable}{a tidy-evaluation style expression that names a column to
+convert into dummy variables}
+
 \item{drop_categorical}{(default: true) an indicator to remove the original
 variable}
-
-\item{a}{tidy-evaluation style expression that names a column to convert
-into dummy variables}
 }
 \value{
-a modified data.frame
+a modified data.frame with new columns that are dummy indicators for
+each level of the variable specified
 }
 \description{
 This document introduces a pair of functions which should be intuitive to

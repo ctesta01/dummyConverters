@@ -18,13 +18,14 @@
 #'
 #' @param df the data.frame to modify
 #' 
-#' @param a tidy-evaluation style expression that names a column to convert
-#' into dummy variables
+#' @param variable a tidy-evaluation style expression that names a column to
+#' convert into dummy variables
 #' 
 #' @param drop_categorical (default: true) an indicator to remove the original
 #' variable
 #' 
-#' @return a modified data.frame
+#' @return a modified data.frame with new columns that are dummy indicators for
+#' each level of the variable specified
 #' 
 #' @seealso dummies_to_categorical
 #' @export
