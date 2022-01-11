@@ -63,7 +63,7 @@ commands in R after you've installed the package.
 ?dummies_to_categorical
 ```
 
-![screenshot of documentation shown inside rstudio](categorical_to_dummies.png)
+![screenshot of documentation shown inside rstudio](img/categorical_to_dummies.png)
 
 
 ### Read the examples 
