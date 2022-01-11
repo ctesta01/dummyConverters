@@ -53,6 +53,18 @@ head(mtcars)
 ## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
 ```
 
+### Read the function documentation 
+
+You can access documentation for either function using the `?` or `help()`
+commands in R after you've installed the package.
+
+```r
+?categorical_to_dummies
+?dummies_to_categorical
+```
+
+![screenshot of documentation shown inside rstudio](categorical_to_dummies.png)
+
 
 ### Read the examples 
 
