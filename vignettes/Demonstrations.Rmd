@@ -1,0 +1,76 @@
+---
+title: "Demonstrations"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Demonstrations}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(dummyConverters)
+library(magrittr)
+```
+
+# Demonstration with mtcars
+
+```{r demonstration with mtcars}
+
+# if we copy mtcars into a new object
+df <- mtcars 
+head(df)
+
+# we can convert the cyl variable to dummy variables
+df %<>% categories_to_dummies(cyl)
+head(df)
+
+# and we can convert it back 
+df %<>% dummies_to_categorical(cyl) 
+
+# if we want to specify the original ordering, we can
+df %<>% select(mpg, cyl, everything())
+
+# pay attention that the version converted back will be a character vector
+df$cyl %<>% as.numeric()
+head(df)
+
+# that said, now the version that went through dummy variable creation and
+# dummy variable conversion back to a categorical variable is identical with
+# the original
+identical(df, mtcars)
+```
+
+
+# Demonstration with palmerpenguins 
+
+```{r demonstration with palmerpenguins}
+# similarly we can do this with the palmerpenguins dataset on a factor variable
+library(palmerpenguins)
+df <- penguins
+head(df)
+
+# convert to dummy variables
+df %<>% categories_to_dummies(species)
+head(df)
+
+# convert back to a categorical variable
+df %<>% dummies_to_categorical(species)
+
+# specify the original ordering
+df %<>% select(species, everything())
+
+# specify that we want a factor variable
+df$species %<>% factor()
+head(df)
+
+# we can confirm that the converted & un-converted data matches the original 
+identical(df, penguins)
+```
+

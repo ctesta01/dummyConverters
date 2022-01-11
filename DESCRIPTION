@@ -1,0 +1,22 @@
+Package: dummyConverters
+Title: Provides functions to convert categorical variables to dummy variables and vice-versa
+Version: 0.0.0.9000
+Authors@R: 
+    person("Christian", "Testa", , "ctesta@hsph.harvard.edu", role = c("aut", "cre"))
+Description: dummyConverters provides two functions which convert categorical
+    variables to dummy variables (which are true/false value columns) and
+    vice-versa in a tidyverse style syntax.
+License: MIT
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends:
+  rlang,
+  stringr,
+  dplyr
+Suggests: 
+    knitr,
+    rmarkdown,
+    magrittr,
+    palmerpenguins
+VignetteBuilder: knitr
